@@ -8,9 +8,7 @@ import java.util.Scanner;
 
 public class ParseCSV {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 		// create array list to store data
 		ArrayList<String> list = new ArrayList<>();
@@ -32,11 +30,14 @@ public class ParseCSV {
 			csvArray[i] = tempArray[i].split(",");
 
 		}
-		// 
+		// regular for  unpack on i
 		for (int i = 0; i < csvArray.length; i++) {
 			System.out.println(Arrays.toString(csvArray[i]));
-			
-
+						
+		}
+		// foreach element in csvArray...
+		for(String[] s : csvArray){
+			System.out.println(Arrays.toString(s));
 			
 		}
 		
